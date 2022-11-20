@@ -166,11 +166,16 @@ header .social-media a {
 
 }
 
+.gallery h2 {
+    padding: 2%;
+}
+
 .row {
     display:flex;
     margin: 4% auto;
-    flex-flow: row nowrap;
-    width: 80%;
+    flex-flow: row wrap;
+    width: 30%;
+    padding: 2%;
     justify-content: space-around;
 }
 
@@ -346,11 +351,11 @@ footer .footer-right .copyright {
         height: auto;
     }
 
-    .row {
+    .images {
         flex-direction: column;
     }
 
-    .row img {
+    .images img {
         width: 100%;
         margin: 4% auto;
     }
