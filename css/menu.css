@@ -263,6 +263,9 @@ footer .footer-right .copyright {
     font-size: 1rem;
 }
 
+a:hover {
+    color: #808080;
+}
 
 
 
@@ -275,6 +278,12 @@ footer .footer-right .copyright {
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
+
+    html {
+        width: 100%;
+    }
+
+    /* Header Tags */
     .header-title {
         width: 75%;
         margin: 0 auto;
@@ -282,11 +291,68 @@ footer .footer-right .copyright {
         font-size: 4rem;
     }
 
-    /* menu */
-    .menu {
-        background-image: none;
+    header h1 a {
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.2;
     }
 
+    header nav, header .social-media {
+        display:flex;
+        flex-direction: column;
+    }
+
+    /* Menu Tags */
+    .menu {
+        background-image: none;
+        background-color: rgb(225, 239, 230);
+        color: black;
+    }
+
+    .layer {
+        background-color: rgba(0,0,0,0);
+    }
+
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .menu-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu-section h3 {
+        margin: 0 auto;
+        width:fit-content;
+        padding: 1% 3%;
+        border: 2px solid black;
+    }
+
+    h2, h3, .title-price h4, p {
+        color:black;
+        text-align: center;
+    }
+
+    .title-price {
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    /* Section Title */
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    /* Item name and price */
+    .title-price h4 {
+        font-size: 3rem;
+    }
+
+    /* Item description */
+    .menu-item p {
+        font-size: 2.5rem;
+    }
     /* footer section */
     footer {
         height: auto;

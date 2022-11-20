@@ -345,6 +345,15 @@ footer .footer-right .copyright {
     .gallery {
         height: auto;
     }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row img {
+        width: 100%;
+        margin: 4% auto;
+    }
     
     /* about us section */
 
@@ -358,7 +367,7 @@ footer .footer-right .copyright {
     }
     
     .about-container .text {
-        width: 85%;
+        width: 85%;        
     }
     
     /* contact us section */
