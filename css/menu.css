@@ -66,10 +66,6 @@ h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
 }
 
-h1 {
-    font-size: 7.5rem;
-}
-
 h2 {
     font-size: 6rem;
 }
@@ -84,6 +80,15 @@ h4 {
 
 p, a {
     font-size: 3rem;
+}
+
+/* All text is white! */
+h1, h2, h3, p, a {
+    color: rgb(225, 239, 230);
+}
+
+a:hover {
+    color:gray;
 }
 
 
@@ -283,24 +288,7 @@ a:hover {
         width: 100%;
     }
 
-    /* Header Tags */
-    .header-title {
-        width: 75%;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 4rem;
-    }
-
-    header h1 a {
-        text-align: center;
-        font-size: 4rem;
-        line-height: 1.2;
-    }
-
-    header nav, header .social-media {
-        display:flex;
-        flex-direction: column;
-    }
+/* header tags should be in index.css */
 
     /* Menu Tags */
     .menu {
