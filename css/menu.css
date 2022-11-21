@@ -102,6 +102,10 @@ header {
     background-repeat: no-repeat;
 }
 
+.header-top {
+    padding: 2%;
+}
+
 /* spacer */
 .spacer {
     width: 100%;
@@ -195,22 +199,25 @@ header {
 .menu-item p i {
     font-style: italic;
 }
+
+
+a:hover {
+    color: #808080;
+}
+
 /* footer section */
-/* copied and pasted from index.css bc my formatting was messed up */
-/* footer section */
+/* Copied/pasted from index.css bc it was not cascading */
 footer {
     background-color: rgb(0, 4, 17);
     width: 100%;
-    height: 15vh;
     padding-bottom: 15vh;
     margin: 0;
     font-size: 3rem;
     display:flex;
     flex-direction: row;
-    
 }
 
-footer .footer-left {
+ .footer-left {
     width: 50%;
     height: inherit;
     align-content: center;
@@ -218,28 +225,28 @@ footer .footer-left {
     display: flex;
 }
 
-footer .footer-left .email-signup {
+.email-signup {
     width: 80%;
 }
 
-footer .footer-left p {
+.footer-left p {
     font-size: 2rem;
 }
 
-footer .footer-left input {
+input {
     width: 65%;
     margin: 0;
 }
 
-footer .footer-left button {
+.footer-left button {
     margin: 0;
 }
 
-footer .nav {
-    justify-items: flex-end;
+footer nav {
+    /* justify-items: flex-end; */
 }
 
-footer .footer-right {
+.footer-right {
     width: 60%;
     height: inherit;
     display:flex;
@@ -248,18 +255,18 @@ footer .footer-right {
     padding-right: 1vh;
 }
 
-footer .footer-right nav {
+footer nav {
     width: 100%;
     display: flex;
     padding-left: 5%;
     justify-content: space-around;
 }
 
-footer .footer-right nav a {
+.footer-right nav a {
     font-size: 2rem;
 }
 
-footer .footer-right .copyright {
+.copyright {
     padding-right: 10%;
     align-self: flex-end;
 }
@@ -268,11 +275,24 @@ footer .footer-right .copyright {
     font-size: 1rem;
 }
 
-a:hover {
-    color: #808080;
+
+/* ///////////////////////////////////// *
+ * ///////////////////////////////////// * 
+ * ////// MENU FIX < 700 /////////// *
+ * ///////////////////////////////////// * 
+ * ///////////////////////////////////// */
+ @media (max-width: 700) {
+    .menu-container {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        align-content: center;
+    }
+
+    .menu-section {
+        width: 50%;
+    }
 }
-
-
 
 /* ///////////////////////////////////// *
  * ///////////////////////////////////// * 
@@ -342,11 +362,11 @@ a:hover {
         font-size: 2.5rem;
     }
     /* footer section */
-    footer {
+    /* footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
-    }
+    } */
 }
 
 
