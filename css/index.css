@@ -184,6 +184,21 @@ header .social-media a {
 .row img {
     width: 30%;
     margin: 1%;
+.gallery h2 {
+    padding: 2%;
+}
+
+.images {
+    display:flex;
+    margin: 4% auto;
+    flex-flow: row wrap;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 33%;
+    padding: 2%;
 }
 
 
@@ -431,6 +446,15 @@ a:hover {
     /* gallery section */
     .gallery {
         height: auto;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 100%;
+        margin: 4% auto;
     }
     
     /* about us section */
