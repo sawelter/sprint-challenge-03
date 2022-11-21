@@ -124,16 +124,20 @@ h1 {
 /* desktop header navigation*/
 header nav {
     width:90%;
-    display:flex;
     margin: 1% auto;
-    justify-content: space-around;
 }
 
-header .social-media {
+.social-media {
     width:90%;
     display:flex;
     margin: 2% auto;
     justify-content: center;
+}
+
+.links {
+    width: 90%;
+    display:flex;
+    justify-content: space-around;
 }
 
 header nav a {
